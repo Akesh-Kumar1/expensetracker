@@ -30,6 +30,8 @@ const onSubmit = ()=>{
     {
         toast.error('Both field required')
     }
+    else
+    {
    const transactionData = {
     text: text.value,
     amount: parseFloat(amount.value)
@@ -39,6 +41,7 @@ const onSubmit = ()=>{
 
     text.value =''
     amount.value =''
+}
     
 }
 
